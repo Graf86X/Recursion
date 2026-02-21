@@ -8,7 +8,7 @@
 ## 📂 Съдържание / Теми
 
 ###  🔹 Complexity
-   📊 [Времева сложност](/) – O(1) → O(nⁿ)
+   📊 [Времева сложност](/Complexity.md) – O(1) → O(nⁿ)
 
 ###  🔹 Recursion
    🔄 [🎯 Рекурсивни примери](/) – Fibonacci, Binary Search
