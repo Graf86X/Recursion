@@ -10,6 +10,19 @@ int select_element(int arr[], size_t i){
 }
 ````` 
 
+## O(log n)
+Двоично търсене
+````cpp
+int binary_search(int* arr, int x, int l, int r){
+	if (l > r) return -1;
+
+	int mid = l + (r - l) / 2;
+	if (arr[mid] == x) return mid;
+	if (arr[mid] > x) return binary_search(arr, x, l, mid - 1);
+	if (arr[mid] < x) return binary_search(arr, x, mid + 1, r);
+}
+````
+
 ## O(n)
 Линейно търсене
 
