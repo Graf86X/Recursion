@@ -5,7 +5,7 @@
 Достъп до елемент
 
 ```cpp
-int select_element(int arr[], unsigned int i){
+int select_element(int arr[], size_t i){
     retrun arr[i];
 }
 ````` 
@@ -25,6 +25,19 @@ bool find_element(int arr[], size_t n, int elem) {
 `````
 
 ## O(n<sup>2</sup>)
+
+Buble sort
+
+````cpp
+void Buble_sort(int arr[], size_t n){
+    for(size_t i = 0; i < n-1; ++i){
+        for(size_t j = 0; j < n - 1 - i; ++j){
+            if(arr[j] > arr[j+1])
+                swap(arr[j], arr[j+1]);
+        }
+    }    
+}
+````
 
 ## O(2<sup>n</sup>)
 Рекурсивното решение за редицата на Финбуначи
