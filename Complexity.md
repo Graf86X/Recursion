@@ -79,3 +79,19 @@ void generate_permutations(int* nums, unsigned int pos, const unsigned int n) {
     }
 }
 ````
+## O(n<sup>n</sup>)
+Вариации с повторение
+````cpp
+void variation(int* nums, unsigned int pos, const unsigned int n) {
+    if (pos == n) {
+        return;
+    }
+
+    for (unsigned int i = 0; i < n; ++i) {
+        swap(nums[pos], nums[i]);
+        variation(nums, pos + 1, n);
+        swap(nums[pos], nums[i]);
+    }
+}
+````
+> Забележка: Разликата меджу кода с времева сложност O(n!) и O(n<sup>n</sup>) е в началната стойност на `i` във *for-цикъла*!
