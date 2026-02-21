@@ -78,7 +78,7 @@ unsigned int fibunacci(unsigned int n){
 - Брой на операциите: n!
 - Всички възможни подредби, като елементите се ползват точно веднъж
 ````cpp
-void generate_permutations(int* nums, unsigned int pos, const unsigned int n) {
+void permutations(int* nums, unsigned int pos, const unsigned int n) {
     if (pos == n) {
         return; // не правим нищо
     }
