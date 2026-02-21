@@ -7,8 +7,6 @@ int binary_search(int* arr, int x, int l, int r){
 	if (arr[mid] == x) return mid;
 	if (arr[mid] > x) return binary_search(arr, x, l, mid - 1);
 	if (arr[mid] < x) return binary_search(arr, x, mid + 1, r);
-
-
 }
 
 void main() {
