@@ -65,7 +65,7 @@ unsigned int fibunacci(unsigned int n){
 ````
 
 ## O(n!)
-Всички възможни подредби
+Пермутация без повторение(Всички възможни подредби)
 ````cpp
 void generate_permutations(int* nums, unsigned int pos, const unsigned int n) {
     if (pos == n) {
@@ -80,7 +80,7 @@ void generate_permutations(int* nums, unsigned int pos, const unsigned int n) {
 }
 ````
 ## O(n<sup>n</sup>)
-Вариации с повторение
+Вариации с повторения
 ````cpp
 void variation(int* nums, unsigned int pos, const unsigned int n) {
     if (pos == n) {
@@ -95,3 +95,5 @@ void variation(int* nums, unsigned int pos, const unsigned int n) {
 }
 ````
 > Забележка: Разликата меджу кода с времева сложност O(n!) и O(n<sup>n</sup>) е в началната стойност на `i` във *for-цикъла*!
+> - O(n!) → `i = pos` (елементите не се повтарят)
+> - O(n<sup>n</sup>) → `i = 0` (елементите могат да се повтарят)
