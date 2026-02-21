@@ -63,3 +63,19 @@ unsigned int fibunacci(unsigned int n){
     return fibunacci(n-1) + fibunacci(n-2);
 }
 ````
+
+## O(n!)
+Всички възможни подредби
+````cpp
+void generate_permutations(int* nums, unsigned int pos, const unsigned int n) {
+    if (pos == n) {
+        return; // не правим нищо
+    }
+
+    for (unsigned int i = pos; i < n; ++i) {
+        swap(nums[pos], nums[i]);
+        generate_permutations(nums, pos + 1, n);
+        swap(nums[pos], nums[i]);
+    }
+}
+````
