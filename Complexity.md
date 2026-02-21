@@ -2,7 +2,9 @@
 
 
 ## O(1)
-Достъп до елемент
+Достъп до елемент по индекс
+- Брой на операциите: 1 (Независимо от размера на масивът)
+- Взима i-тия елемент
 
 ```cpp
 int select_element(int arr[], size_t i){
@@ -12,6 +14,9 @@ int select_element(int arr[], size_t i){
 
 ## O(log n)
 Двоично търсене
+- Брой на операциите: на всяка стъпка взима по-малко от половината
+- Дели масивът на половина
+  
 ````cpp
 int binary_search(int* arr, int x, int l, int r){
 	if (l > r) return -1;
@@ -25,7 +30,8 @@ int binary_search(int* arr, int x, int l, int r){
 
 ## O(n)
 Линейно търсене
-
+- Брой на операциите: n
+- Минава през всички елементи
 ```cpp
 bool find_element(int arr[], size_t n, int elem) {
     for (size_t i = 0; i < n; ++i) {
@@ -40,7 +46,8 @@ bool find_element(int arr[], size_t n, int elem) {
 ## O(n<sup>2</sup>)
 
 Buble sort
-
+- Брой на операциите: n<sup>2</sup> = n*n
+- Два вложени цикъла
 ````cpp
 void Buble_sort(int arr[], size_t n){
     for(size_t i = 0; i < n-1; ++i){
@@ -54,6 +61,8 @@ void Buble_sort(int arr[], size_t n){
 
 ## O(2<sup>n</sup>)
 Рекурсивното решение за редицата на Финбуначи
+- Брой на операциите: 2<sup>n</sup>
+- За n рекурсии има по 2 изхода. Всяко число се разбива на два проблема
 
 ````cpp
 unsigned int fibunacci(unsigned int n){
@@ -65,7 +74,9 @@ unsigned int fibunacci(unsigned int n){
 ````
 
 ## O(n!)
-Пермутация без повторение(Всички възможни подредби)
+Пермутация без повторение
+- Брой на операциите: n!
+- Всички възможни подредби, като елементите се ползват точно веднъж
 ````cpp
 void generate_permutations(int* nums, unsigned int pos, const unsigned int n) {
     if (pos == n) {
@@ -81,6 +92,8 @@ void generate_permutations(int* nums, unsigned int pos, const unsigned int n) {
 ````
 ## O(n<sup>n</sup>)
 Вариации с повторения
+- Брой на операциите: n<sup>n</sup>
+- За n позиции имаме n възможности
 ````cpp
 void variation(int* nums, unsigned int pos, const unsigned int n) {
     if (pos == n) {
