@@ -18,7 +18,7 @@
 
 ###  🔹 Backtracking
    🌀 [Maze Solver](Maze/README.md) – намиране на път в лабиринт   
-   👑 [Eight Queens](Eight_queens.cpp) – класическата задача   
+   👑 [Eight Queens](Eight_queens/README.md) – класическата задача   
    🔢 [Sudoku](Sudoku.cpp) - Судоку
 
 ---
